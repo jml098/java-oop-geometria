@@ -10,14 +10,13 @@ public class Main {
         int widthInput;
         int heightInput;
         Rectangle rectangle;
-        String rectangleRender;
 
         scanner = new Scanner(System.in);
 
-        System.out.println("Inserisci larghezza: ");
+        System.out.print("Inserisci larghezza: ");
         widthInput = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Inserisci larghezza: ");
+        System.out.print("Inserisci larghezza: ");
         heightInput = Integer.parseInt(scanner.nextLine());
 
         rectangle = new Rectangle(widthInput, heightInput);
@@ -28,24 +27,6 @@ public class Main {
         System.out.println("Area: " + rectangle.getArea());
         System.out.println("Perimetro: " + rectangle.getPerimeter());
 
-
-        rectangleRender = "";
-        for (int row = 0; row < rectangle.height; row++) {
-            String rowString = "";
-
-            for (int col = 0; col < rectangle.width; col++) {
-                if (row == 0 || row == rectangle.height - 1) {
-                    rowString += "o";
-                } else if (col != 0 && col != rectangle.width - 1) {
-                    rowString += " ";
-                } else {
-                    rowString += "o";
-                }
-            }
-
-            rectangleRender += rowString + "\n";
-        }
-
-        System.out.println(rectangleRender);
+        rectangle.render();
     }
 }
