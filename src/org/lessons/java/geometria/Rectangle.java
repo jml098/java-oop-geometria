@@ -26,11 +26,11 @@ public class Rectangle {
 
             for (int col = 0; col < this.width; col++) {
                 if (row == 0 || row == this.height - 1) {
-                    rowString += "o";
+                    rowString += "o ";
                 } else if (col != 0 && col != this.width - 1) {
-                    rowString += " ";
+                    rowString += "  ";
                 } else {
-                    rowString += "o";
+                    rowString += "o ";
                 }
             }
 
