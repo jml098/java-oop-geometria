@@ -11,11 +11,11 @@ public class Rectangle {
     }
 
 
-    double getArea() {
+    int getArea() {
         return this.width * this.height;
     }
 
-    double getPerimeter() {
+    int getPerimeter() {
         return this.width * 2 + this.height * 2;
     }
 
