@@ -16,7 +16,7 @@ public class Main {
         System.out.print("Inserisci larghezza: ");
         widthInput = Integer.parseInt(scanner.nextLine());
 
-        System.out.print("Inserisci larghezza: ");
+        System.out.print("Inserisci altezza: ");
         heightInput = Integer.parseInt(scanner.nextLine());
 
         rectangle = new Rectangle(widthInput, heightInput);

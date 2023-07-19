@@ -16,8 +16,9 @@ public class Rectangle {
     }
 
     int getPerimeter() {
-        return this.width * 2 + this.height * 2;
+        return (this.width + this.height) * 2;
     }
+
 
     void render() {
         String rectangleRender = "";
